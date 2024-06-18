@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         document.getElementById('cookiePopup').classList.add('show');
-    }, 1000); // Mostra o pop-up 1 segundo após o carregamento da página
+    }, 1000);
 });
 
 function acceptCookies() {
@@ -14,16 +14,18 @@ function showPreferences() {
     document.getElementById('preferencesLink').style.display = 'none';
     document.getElementById('cookiePopup').classList.add('fullscreen');
     document.getElementById('preferences').classList.add('show');
+    document.getElementById('cookietitle').innerText = "Privacy Preferaence"
+    document.getElementById('cookietext').style.display = 'none';
 }
 
 function confirmPreferences() {
     document.getElementById('preferencesLink').style.display = 'block';
     document.getElementById('cookiePopup').classList.remove('fullscreen');
     document.getElementById('preferences').classList.remove('show');
-    // Reexibe o conteúdo inicial
+
     setTimeout(function() {
         document.getElementById('cookiePopup').classList.add('show');
-    }, 500); // Espera a animação de recolhimento antes de reexibir
+    }, 500);
 }
 
 // Evento Login

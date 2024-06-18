@@ -12,21 +12,21 @@
 
     <div class="cookie-popup" id="cookiePopup">
         <div class="initial-content">
-            <h2>We use cookies</h2>
-            <p>This website users cookies to enhance your browsing experience on our website, to show you personalized content and targeted ads, to analyze our website traffic, and to understand where our visitors are coming from. You can manage your preferences by clicking “Change Preference.”.</p>
+            <h2 id="cookietitle">We use cookies</h2>
+            <p id="cookietext">This website users cookies to enhance your browsing experience on our website, to show you personalized content and targeted ads, to analyze our website traffic, and to understand where our visitors are coming from. You can manage your preferences by clicking “Change Preference.”.</p>
             <button onclick="acceptCookies()">Accept all</button>
             <a id="preferencesLink" onclick="showPreferences()">CHANGE PREFERENCES</a>
         </div>
         <div class="preferences" id="preferences">
             <h3>Necessary</h3>
-            <img src="./assets/vector.png" id="vector">
-            <p>Necessary cookies are required to help a website useble by enabling core functions and access to secure areas of the website. The website cannot be function properly without these cookies and they are enabled by default and cannot be dissabled. Cookies Detail</p>
+            <img src="./assets/vector.png" id="vector1">
+            <p>Necessary cookies are required to help a website useble by enabling core functions and access to secure areas of the website. The website cannot be function properly without these cookies and they are enabled by default and cannot be dissabled. <span>Cookies Detail</span>.</p>
             <h3>Analytics</h3>
-            <img src="./assets/vector.png" id="vector">
+            <img src="./assets/vector.png" id="vector2">
             <p>Analytics cookies help website to understrand how visitors interact through the website. These cookies help to improve user experiences by collecting and reporting information.</p>
             <h3>Marketing</h3>
-            <img src="./assets/vector.png" id="vector">
-            <p>Marketing cookies are used to track visitors across websites to display relevant advertisements for the individual user and thereby more valuable for publishers and third party advertisers. Cookie Detail.</p>
+            <img src="./assets/vector.png" id="vector3">
+            <p>Marketing cookies are used to track visitors across websites to display relevant advertisements for the individual user and thereby more valuable for publishers and third party advertisers. <span>Cookie Detail</span>.</p>
             <button class="confirm-btn" onclick="confirmPreferences()">Confirm my choice</button>
         </div>
     </div>

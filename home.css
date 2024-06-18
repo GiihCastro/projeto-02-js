@@ -86,12 +86,13 @@ body {
     width: 375px;
     height: 771px;
     border-radius: 0;
-    transition: top 0.5s ease;
+    transition: top 1.0s ease;
 }
 
 .preferences {
     display: none;
-    padding: 20px;
+    margin-top: 26px;
+    margin-left: 16px;
 }
 
 .preferences.show {
@@ -100,10 +101,52 @@ body {
 
 .preferences h3 {
     color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    margin-right: 10px;
+    margin-top: 26px;
 
 }
 
+.preferences p {
+    font-size: 16px;
+    font-weight: 400;
+}
 
+.preferences p span {
+    color: #6F5FE7;
+}
+
+.preferences img {
+    width: 42px;
+    height: auto; 
+    position: fixed;
+    left: 300px;
+}
+
+#vector1 {
+    position: fixed;
+    bottom: 620px;
+}
+
+#vector2 {
+    position: fixed;
+    bottom: 465px;
+}
+
+#vector3 {
+    position: fixed;
+    bottom: 335px;
+}
+
+.preferences button {
+    display: block;
+    position: fixed;
+    right: 16px;
+    margin-top: 104px;
+
+}
 .confirm-btn {
     padding: 10px 20px;
     background-color: #28a745;
