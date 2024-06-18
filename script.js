@@ -22,6 +22,8 @@ function confirmPreferences() {
     document.getElementById('preferencesLink').style.display = 'block';
     document.getElementById('cookiePopup').classList.remove('fullscreen');
     document.getElementById('preferences').classList.remove('show');
+    document.getElementById('cookietitle').innerText = "We use cookies"
+    document.getElementById('cookietext').style.display = 'block';
 
     setTimeout(function() {
         document.getElementById('cookiePopup').classList.add('show');
